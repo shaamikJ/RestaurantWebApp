@@ -1,0 +1,424 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New';
+}
+
+.outsidecontainer {
+    background: url("home1.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav {
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+    font-family: Mulish, sans-serif;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav a {
+    display: block;
+    padding: .5rem .75rem;
+    text-decoration: none;
+    color: white;
+    margin: .5rem;
+}
+
+.nav a,
+.nav li {
+    display: inline-block;
+}
+
+.nav a:hover {
+    background-color: #11bd19;
+    color: black;
+}
+
+.nav .active {
+    background: #0729be;
+}
+
+.maincontainerhome {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.maincontainerhome .h1box {
+    width: 95%;
+    position: absolute;
+    top: 330px;
+    margin: 0 auto;
+}
+
+.maincontainerhome h1 {
+    font-size: 65px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #f7450f;
+}
+
+button {
+    font-family: 'Courier New' !important;
+}
+
+.dropdown {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: black;
+    /* overflow: hidden; */
+    /* float: left; */
+    margin-top: 1rem;
+    margin-left: auto;
+}
+
+.dropdown .dropbtn {
+    /* float: left; */
+    border: none;
+    display: block;
+    padding: .5rem .75rem;
+    background: #0729be;
+    color: white;
+    /* font-family: 'Lato',sans-serif; */
+    margin: .5rem;
+    font-size: 16px;
+}
+
+.dropdown .dropbtn:hover {
+    background-color: #11bd19;
+    color: #000000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    bottom: 8px;
+    left: 80px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000;
+    color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.maincontent {
+    /* background: url("https://wallpapersdsc.net/wp-content/uploads/2016/09/Junk-Food-High-Definition-Wallpapers.jpg"); */
+    background: url("https://images.ctfassets.net/u0haasspfa6q/3P0NBDuuWRwwLuftbJy3tV/ea19b278c1fc7481b090da183985262c/111746-12726577-food_shoot_tacos_jpg");
+    width: 100%;
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.formcontainer {
+    background: rgb(0, 0, 0, 0.45);
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.3);
+    backdrop-filter: blur( 3px);
+    -webkit-backdrop-filter: blur( 3px);
+    border-radius: 10px;
+    /* background-color: #ffffff; */
+    margin: 0 auto;
+    /* border-radius: .3rem; */
+    width: 80%;
+    /* height: 700px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: .2rem;
+    padding-bottom: 1rem;
+    /* -webkit-box-shadow: 5px 5px 20px 0px #000000; 
+    box-shadow: 5px 5px 20px 0px #000000; */
+}
+
+.formcontainer h2 {
+    font-size: 2.0rem;
+    color: rgb(237, 243, 243);
+    margin: 1rem;
+}
+
+.form-group {
+    width: 70%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.3rem 0.45rem;
+    margin-bottom: .7rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+}
+
+label {
+    /* display: inline-block; */
+    width: 22%;
+    font-size: 1.2rem;
+    font-weight: bold !important;
+    /* border: 0.5px solid green; */
+    padding-top: .3rem;
+}
+
+input {
+    /* display: inline-block; */
+    width: 70%;
+    height: 1.8rem;
+    margin-left: 10px;
+    /* overflow: hidden; */
+    border: none;
+    outline: none;
+    background: none;
+    /* border-radius: .2rem; */
+    border-bottom: 1px solid #ccc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px !important;
+    background: none;
+    color: #ffffff;
+}
+
+input:focus {
+    border-bottom: 1px solid rgb(252, 242, 108);
+}
+
+::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: bold; */
+    color: rgb(252, 242, 108);
+    opacity: 65%;
+}
+
+.formcontainer button {
+    width: 6rem;
+    height: 3.7rem;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: large;
+    border: none;
+    border-radius: .4rem;
+    margin-right: 1rem;
+}
+
+.btn-primary {
+    background-color: rgb(38, 84, 236);
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: rgb(58, 122, 218);
+}
+
+.btn-danger {
+    background-color: #F20B04;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: rgb(212, 72, 8);
+}
+
+.btn-other {
+    background-color: rgb(2, 135, 2);
+    color: white;
+}
+
+.btn-other:hover {
+    background-color: rgb(24, 148, 8);
+    color: white;
+}
+
+.tablebox {
+    width: 80%;
+    /* height: 300px; */
+    /* overflow: auto; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+table {
+    background-color: #ffffff;
+    background: none !important;
+}
+
+th {
+    height: 40px;
+    color: #ffffff;
+}
+
+table,
+th,
+td {
+    border-bottom: .5px solid rgba(204, 204, 204, 0.6);
+    border-collapse: collapse;
+}
+
+td {
+    color: white;
+    height: 48px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.tablebtn {
+    padding: 0 !important;
+    font-size: 15px;
+    border: none;
+    border-radius: .4rem;
+    margin-right: 1rem;
+}
+
+.tdbtn {
+    display: inline-block;
+}
+
+tr:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.pad4 {
+    padding: .2rem !important;
+}
+
+.width60 {
+    width: 90px !important;
+    height: 40px !important;
+    padding-top: 11px !important;
+    /* display: inline-block !important; */
+}
+
+.eye {
+    position: relative;
+    right: 3%;
+    color: rgba(204, 204, 204, 0.6);
+}
+
+#hide1 {
+    display: none;
+}
+
+.tdbtn {
+    display: inline-block;
+    align-items: baseline;
+}
+
+.tdbtn .gfg {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.outset {
+    background: url("home1.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.inset {
+    position: relative;
+    top: 22%;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    /* padding-left: 8rem; */
+    background: rgb(0, 0, 0, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(105, 69, 69, 0.9);
+    backdrop-filter: blur( 3px);
+}
+
+.text {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 18%;
+    top: 30%;
+    width: 87%;
+}
+
+.text span {
+    position: absolute;
+    right: 30%;
+    top: 65%;
+}
+
+.text input {
+    /* width: 120%; */
+    padding: 1.5rem;
+    font-weight: bolder;
+}
+
+.text ::placeholder {
+    color: white !important;
+}
+
+
+/* .setbtn {
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    cursor: pointer;
+    width: 80px;
+} */
+
+.setbtn-other {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    left: 30%;
+    cursor: pointer;
+}
+
+.setbtn-danger {
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+    cursor: pointer;
+}

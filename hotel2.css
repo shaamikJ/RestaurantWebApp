@@ -1,0 +1,114 @@
+body{
+    font-family: 'Mulish',sans-serif;
+}
+.waiter_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.waitercontent{
+    background: none;
+    width: 100%;
+    /* min-height: 100vh;
+    background: linear-gradient(45deg,#ddd6f3 ,#faaca8); */
+    padding: 15px;
+    
+}
+.dashboardcon{
+    width: 100%;
+    background-color: powderblue;
+    min-height: 600px;
+}
+#dashtitle{
+    margin: 0px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    padding-left: 25px;
+}
+.elementscon{
+    background: transparent;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.con1{
+    width: 250px;
+    height: 150px;
+    margin-left: 30px;
+    background: pink;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2px;
+}
+.form-group {
+    width: 70%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.3rem 0.45rem;
+    margin-bottom: .7rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    color: #ffffff;
+}
+h5{
+    font-size: 30px;
+    margin: 0px;
+    border: 1px solid red;
+    padding-right: 0px;
+}
+h6{
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 20px;
+    border: 1px solid red;
+}
+#search_result{
+    display: block;
+    
+    width: 70%;
+    margin-left: 25%;
+}
+#search_result ul{
+    margin: 0px;
+    padding: 0px;
+}
+.list-group{
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+    padding: 0px;
+}
+.list-group-item{
+    background-color: #fff;
+}
+
+li.list-group-item{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 3px;
+    /* padding-left: 10px; */
+    text-decoration: none;
+    text-transform: lowercase;
+    border-bottom: 1px solid #313131;
+    font-family: 'Mulish',sans-serif;
+    color: #000;
+    font-size: 14px;
+}
+li.list-group-item:hover,li.list-group-item:focus{
+    cursor: pointer;
+    background-color: #040404;
+    color: #fff
+}

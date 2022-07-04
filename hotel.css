@@ -1,0 +1,441 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New';
+}
+.outside-out{
+    background: url("home1.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.outsidecontainer {
+    
+}
+
+.nav {
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Mulish',sans-serif;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav a {
+    display: block;
+    padding: .5rem .75rem;
+    text-decoration: none;
+    color: white;
+    margin: .5rem;
+}
+
+.nav a,
+.nav li {
+    display: inline-block;
+}
+
+/* .nav a:hover {
+    background-color: #11bd19;
+    color: black;
+} */
+.nav a:hover {
+    border-bottom: 2px solid #ffffff;
+    color: #3f925f;
+}
+
+
+.nav .active {
+    border-bottom: 2px solid #3f925f;
+}
+
+.maincontainerhome {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.maincontainerhome .h1box {
+    width: 95%;
+    position: absolute;
+    top: 330px;
+    margin: 0 auto;
+}
+
+.maincontainerhome h1 {
+    font-size: 65px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #f7450f;
+}
+
+button {
+    font-family: 'Courier New' !important;
+}
+
+.dropdown {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: black;
+    /* overflow: hidden; */
+    /* float: left; */
+    margin-top: 1rem;
+    margin-left: auto;
+}
+
+.dropdown .dropbtn {
+    /* float: left; */
+    border: none;
+    display: block;
+    padding: .5rem .75rem;
+    background: #0729be;
+    color: white;
+    /* font-family: 'Lato',sans-serif; */
+    margin: .5rem;
+    font-size: 16px;
+}
+
+.dropdown .dropbtn:hover {
+    background-color: #11bd19;
+    color: #000000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    bottom: 8px;
+    left: 80px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000;
+    color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.maincontent {
+    /* background: url("https://wallpapersdsc.net/wp-content/uploads/2016/09/Junk-Food-High-Definition-Wallpapers.jpg"); */
+    background: url("https://images.ctfassets.net/u0haasspfa6q/3P0NBDuuWRwwLuftbJy3tV/ea19b278c1fc7481b090da183985262c/111746-12726577-food_shoot_tacos_jpg");
+    background: url("https://cdn.pixabay.com/photo/2015/09/02/12/41/food-918613_1280.jpg");
+    background: url("https://images.unsplash.com/photo-1511421616335-5a9846f1afcb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2QlMjBzZXJ2aW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    width: 100%;
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0rem;
+}
+.maincontent-trans{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(255,255,255,0.1);
+    padding: 1rem;
+}
+.formcontainer {
+    /* background: rgb(0, 0, 0, 0.4); */
+    background: linear-gradient(45deg,#a8e063,#56ab2f);
+    background: linear-gradient(45deg,#42275a,#734b6d);
+    background: linear-gradient(45deg,#000428,#004e92);
+    
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.3);
+    backdrop-filter: blur( 3px);
+    -webkit-backdrop-filter: blur( 3px);
+    border-radius: 10px;
+    /* background-color: #ffffff; */
+    margin: 0 auto;
+    /* border-radius: .3rem; */
+    width: 80%;
+    height: 700px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: .2rem;
+    padding-bottom: 1rem;
+    /* -webkit-box-shadow: 5px 5px 20px 0px #000000; 
+    box-shadow: 5px 5px 20px 0px #000000; */
+}
+.form-newcol{
+    /* background: #3f925f; */
+    background: rgba(63,146,95,0.95);
+
+    
+}
+.formcontainer h2 {
+    font-size: 2.0rem;
+    color: rgb(237, 243, 243);
+    margin: 1rem;
+}
+
+.form-group {
+    width: 70%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.3rem 0.45rem;
+    margin-bottom: .7rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+}
+
+label {
+    /* display: inline-block; */
+    width: 22%;
+    font-size: 1.2rem;
+    font-weight: bold !important;
+    /* border: 0.5px solid green; */
+    padding-top: .3rem;
+}
+
+input {
+    /* display: inline-block; */
+    width: 70%;
+    height: 1.8rem;
+    margin-left: 10px;
+    /* overflow: hidden; */
+    border: none;
+    outline: none;
+    background: none;
+    /* border-radius: .2rem; */
+    border-bottom: 2px solid #ccc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px !important;
+    background: none;
+    color: #ffffff;
+}
+
+input:focus {
+    border-bottom: 2px solid rgb(250, 240, 99);
+}
+
+::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: bold; */
+    color: rgb(252, 242, 108);
+    opacity: 70%;
+}
+
+.formcontainer button {
+    width: 6rem;
+    height: 3.7rem;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: large;
+    border: none;
+    border-radius: .4rem;
+    margin-right: 1rem;
+}
+
+.btn-primary {
+    background-color: rgb(38, 84, 236);
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: rgb(58, 122, 218);
+}
+
+.btn-danger {
+    background-color: #F20B04;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: rgb(212, 72, 8);
+}
+
+.btn-other {
+    background-color: rgb(2, 135, 2);
+    color: white;
+}
+
+.btn-other:hover {
+    background-color: rgb(24, 148, 8);
+    color: white;
+}
+.width60 {
+    width: 40px !important;
+    height: 40px !important;
+    padding-top: 11px !important;
+    /* display: inline-block !important; */
+}
+.tablebox {
+    width: 80%;
+    /* height: 300px; */
+    /* overflow: auto; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+table {
+    background-color: #ffffff;
+}
+
+th {
+    height: 40px;
+    background: rgb(240, 112, 7);
+    color: #ffffff;
+}
+
+table,
+th,
+td {
+    background: none !important;
+    border-bottom: .5px solid rgba(204, 204, 204, 0.6);
+    border-collapse: collapse;
+}
+
+td {
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.tablebtn {
+    width: 50px !important;
+    height: 3.3rem !important;
+    padding: 0 !important;
+    font-size: 15px;
+    border: none;
+    padding: 5px !important;
+    margin: 0px !important;
+    text-align: center;
+    color: #fff;
+    
+}
+.btn-delete{
+    background-color: #C22B06;
+}
+.btn-delete:hover{
+    background-color: #c22c0693;
+}
+.pad4 {
+    padding: .2rem !important;
+}
+
+.width60 {
+    width: 90px !important;
+    height: 40px !important;
+    padding-top: 11px !important;
+    /* display: inline-block !important; */
+}
+
+.tdbtn {
+    display: inline-block;
+}
+
+tr:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.eye {
+    position: relative;
+    right: 3%;
+    color: rgba(204, 204, 204, 0.6);
+}
+
+#hide1 {
+    display: none;
+}
+
+.tdbtn {
+    display: inline-block;
+    align-items: baseline;
+}
+
+.tdbtn .gfg {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+/* CSS */
+.button-28 {
+    appearance: none;
+    background-color: #6db32d;
+    /* border: 2px solid #ffffff; */
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 45px;
+    min-width: 0;
+    outline: none;
+    
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 60px;
+    will-change: transform;
+    margin-right: 15px;
+  }
+  .button-29{
+      background-color: rgb(155, 21, 21);
+  }
+  .button-30{
+      background-color: rgb(53, 100, 175);
+  }
+  .button-28:disabled, .button-29:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover, .button-29:hover {
+    color: #fff;
+    background-color: rgb(50, 22, 141);
+    color: #000;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-5px);
+  }
+  
+  .button-28:active, .button-29:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  .editpages_col{
+      background: linear-gradient(45deg,#000428,#004e92);
+  }
